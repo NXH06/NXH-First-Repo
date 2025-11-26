@@ -1,0 +1,6 @@
+BEGIN
+repeat until n>0
+   input n
+   convert input to number type        // in case the user inputs a non-number 
+print "ok"
+END

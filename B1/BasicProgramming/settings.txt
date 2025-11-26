@@ -1,0 +1,6 @@
+- Check for home, end, delete buttons
+- Theme: One Dark Pro Mix
+- Tab Spaces: 4
+- Font: Bahnschrift Light
+- IndentRainbow
+- Remember libraries: stdio.h, math,h, string,h, stdlib.h (for malloc)

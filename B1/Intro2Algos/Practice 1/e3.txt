@@ -1,0 +1,12 @@
+BEGIN
+input a
+input b
+if a>=b then
+   s <- (-1)
+else
+   s <- 1
+for i <- a to b step s do
+   if i mod 2 = 1 then
+      print i
+END
+

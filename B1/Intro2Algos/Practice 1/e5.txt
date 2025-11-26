@@ -1,0 +1,4 @@
+BEGIN
+input n
+print ceiling(n/2)
+END

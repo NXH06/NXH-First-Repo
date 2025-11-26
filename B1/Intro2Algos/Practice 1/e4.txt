@@ -1,0 +1,15 @@
+BEGIN
+input n
+prime <- "n is a prime"
+for i <- 2 to sqrt(n) step 1 do
+   if n mod i = 0 then
+      prime <- "n is not a prime"
+      break
+   else
+      continue
+print prime
+END
+
+
+
+
