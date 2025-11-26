@@ -1,0 +1,4 @@
+
+Student ID      Last Name            First Name           Algebra      Calculus     BasicProg    Date of Birth        GPA            
+========================================================================
+               | Q                   | ¹²ö                 | 0.00         | 0.00         | 0.00         | 0 / 0/   0 | 15.33           | 0.00           

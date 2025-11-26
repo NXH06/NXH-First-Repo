@@ -1,0 +1,9 @@
+1/ To easily display the list in reverse order, we will need to delete the final element of the list after printing it,
+so that the while (p != NULL) loop always stop at the element before the most recently displayed element.
+Therefore, we will need another Singly Linked List structure which copies all elements of the original list,
+so that we may delete elements without harming the original list.
+2/ a function that creates a copy of the original list,
+a function to traverse to and display the final element of the list,
+and a function to delete the final element of the list.
+3/ For a list with n elements, the p->pNext line runs for n(n+1)/2 times.
+Therefore the complexity is O(n^2).

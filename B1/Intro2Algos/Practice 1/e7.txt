@@ -1,0 +1,9 @@
+BEGIN
+count <- (0)
+repeat until n>0
+   input n
+   convert input to number type
+   if n <= 0 then
+      count <- count + 1
+print "ok"
+END

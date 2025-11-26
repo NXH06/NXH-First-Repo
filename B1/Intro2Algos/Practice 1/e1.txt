@@ -1,0 +1,13 @@
+BEGIN
+input number1
+input number2
+input number3
+largest <- number1
+if number2 > largest then
+   largest <- number2
+endif
+if number3 > largest then
+   largest <- number3
+endif
+print largest
+END
