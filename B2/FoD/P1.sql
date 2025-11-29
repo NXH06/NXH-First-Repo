@@ -124,7 +124,7 @@ it may need to be run seperately from the previous code to actually be able to s
 
 -- 6: due to foreign key constraints, tables are dropped in reverse order
 ALTER TABLE Department DROP FOREIGN KEY Department_ssn;
-ALTER TABLE Employee DROP FOREIGN KEY Employee_dno; 
+ALTER TABLE Employee DROP FOREIGN KEY Employee_dno;
 DROP TABLE IF EXISTS Dependent;
 DROP TABLE IF EXISTS Works_on;
 DROP TABLE IF EXISTS Project;
