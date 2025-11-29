@@ -1,5 +1,8 @@
 # NXH-First-Repo
-to store my code in uni labworks.
-IMPORTANT NOTE: upload to here using only git bash, for learning purposes. Don't use GitHub UI or Git GUI
+Created to store my code in university practice classes.
+IMPORTANT NOTE: try to push changes to here using only git bash, for learning purposes. Don't use GitHub UI or Git GUI
+(although the VSCode UI is kinda neat :p)
 
-update on 26/11/2025: so it turns out that if I download the file, I can just update it in the local repo, then push it to remote :p
+UPDATE: this repo now contains the "pp2025" fork from SonTG as a submodule.
+Whenever the submodule is updated, this one must add B2/APP/pp2025 into its next commit.
+
