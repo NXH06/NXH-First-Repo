@@ -1,10 +1,8 @@
 -- remember: it's possible to run the code by blocks!
 DROP DATABASE IF EXISTS Company; -- so that code can be rerun multiple times (for testing purposes)
-
 -- 1, 2
 CREATE DATABASE IF NOT EXISTS Company;
 USE Company;
-
 -- 3
 CREATE TABLE Employee (
     Fname VARCHAR(20),
@@ -68,21 +66,19 @@ CREATE TABLE Dependent (
     PRIMARY KEY (Essn, Dependent_name),
     FOREIGN KEY (Essn) REFERENCES Employee(Ssn)
 );
-
 -- 4
 ALTER TABLE Employee
 ADD COLUMN Partner_ssn CHAR(9); -- default is already set to NULL... by default
-
 -- 5: if columns not stated explicitly, insert into all columns
 INSERT INTO Department
 VALUES
-("Adults", 18, NULL, "2025/11/19"),
+("Adults", 18, NULL, "2025-11-19"),
 ("Children", 17, NULL, NULL);
 INSERT INTO Employee
 VALUES
-("Hien", "X", "Nguyen", "123456789", "2006/02/24", "Ha Noi", "M", 1000, NULL, NULL, NULL),
-("Khoa", "M", "Tran Thi", "333444555", "1980/05/11", "Nghe An", "F", 2000, "123456789", NULL, NULL),
-("Mai", "H", "Nguyen", "101010101", "2009/08/23", "Ha Noi", "F", 400, "123456789", NULL, NULL);
+("Hien", "X", "Nguyen", "123456789", "2006-02-24", "Ha Noi", "M", 1000, NULL, NULL, NULL),
+("Khoa", "M", "Tran Thi", "333444555", "1980-05-11", "Nghe An", "F", 2000, "123456789", NULL, NULL),
+("Mai", "H", "Nguyen", "101010101", "2009-08-23", "Ha Noi", "F", 400, "123456789", NULL, NULL);
 UPDATE Department
 SET Mgr_ssn = "123456789" WHERE Dnumber = 18;
 UPDATE Employee
@@ -108,10 +104,9 @@ VALUES
 ("101010101", 0, 10);
 INSERT INTO Dependent
 VALUES
-("123456789", "Sun", "F", "2019/01/01", "Pet"),
+("123456789", "Sun", "F", "2019-01-01", "Pet"),
 ("333444555", "Nobody", NULL, NULL, NULL),
-("101010101", "Moon", "M", "2020/01/01", "Pet");
-
+("101010101", "Moon", "M", "2020-01-01", "Pet");
 -- show work!
 SELECT * FROM Employee;
 SELECT * FROM Department;
@@ -121,7 +116,6 @@ SELECT * FROM Works_on;
 SELECT * FROM Dependent;
 /* note: if the above code is run in VSCode instead of MySQL Workbench or command-line,
 it may need to be run seperately from the previous code to actually be able to show results. */
-
 -- 6: due to foreign key constraints, tables are dropped in reverse order
 ALTER TABLE Department DROP FOREIGN KEY Department_ssn;
 ALTER TABLE Employee DROP FOREIGN KEY Employee_dno;
