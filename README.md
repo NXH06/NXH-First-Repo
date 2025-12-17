@@ -4,5 +4,6 @@ IMPORTANT NOTE: try to push changes to here using only git bash, for learning pu
 (although the VSCode UI is kinda neat :p)
 
 UPDATE: this repo now contains the "pp2025" fork from SonTG as a submodule.
-Whenever the submodule is updated, this one must add B2/APP/pp2025 into its next commit.
+Whenever the submodule is updated, this one must add B2/APP/pp2025 and the B2APPpp2025 submodule clone into its next commit by doing:
+    git submodule update --remote
 
