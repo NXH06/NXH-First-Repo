@@ -1,4 +1,7 @@
 __pycache__
-*.txt
 *.dat
 *.zip
+*.txt
+*.doc
+*.docx
+desktop.ini

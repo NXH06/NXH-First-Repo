@@ -3,14 +3,15 @@
 #include <unistd.h>
 #include <signal.h>
 
-void handler(int sig) {
-    printf("\n[Signal received: %d]\n", sig);
-    switch(sig) {
-        case SIGTSTP:
+void handler(int signum) { // handler
+    printf("\n[Signal received: %d]\n", signum);
+    switch(signum) {
+        case SIGTSTP: // keyboard stop (not SIGSTOP, which is unstoppable)
             printf("Pause for 3 seconds!\n");
             sleep(3);
             break;
-        case SIGINT:
+        case SIGINT: // cascade to case SIGTERM
+        case SIGSTOP:
         case SIGTERM:
             printf("\tProgram terminated.\n");
             exit(0);
@@ -21,6 +22,7 @@ void handler(int sig) {
     }
 }
 int main() {
+    // set handlers
     signal(SIGTSTP, handler);
     signal(SIGINT, handler);
     signal(SIGTERM, handler);
