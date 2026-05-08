@@ -4,4 +4,6 @@ __pycache__
 *.txt
 *.doc
 *.docx
+*.jpg
+*.png
 desktop.ini
