@@ -19,9 +19,10 @@ def weighted_avg(arr: np.ndarray):
     return Image.fromarray(arr)
 
 def main():
-    img = Image.open("cat.jpg")
+    img_name = input("Image name: ")
+    img = Image.open(f"{img_name}.jpg")
     arr = np.array(img)
     img_processed = weighted_avg(arr)
-    img_processed.save("cat_weighted_avg.jpg")
+    img_processed.save(f"{img_name}_weighted_avg.jpg")
 
 main()

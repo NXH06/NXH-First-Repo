@@ -9,14 +9,14 @@ def blur(arr: np.ndarray, radius: int):
             kernel = np.array([[1] * edge_pixel_count] * edge_pixel_count)
             kernel = np.divide(kernel, region.size)
             arr[row][col] = np.sum(region * kernel)
-    print(arr)
     return Image.fromarray(arr)
 
 def main():
-    img = Image.open("cat.jpg")
+    img_name = input("Image name: ")
+    img = Image.open(f"{img_name}.jpg")
     arr = np.array(img)
-    radius = 1
+    radius = 4
     img_processed = blur(arr, radius)
-    img_processed.save("cat_blur.jpg")
+    img_processed.save(f"{img_name}_blur.jpg")
 
 main()
