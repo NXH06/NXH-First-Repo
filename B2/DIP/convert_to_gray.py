@@ -1,5 +1,6 @@
 from PIL import Image
 
-img = Image.open("cat (color).jpg")
+img_name = input("Image name: ")
+img = Image.open(f"{img_name} (color).jpg")
 img = img.convert("L") # convert to grayscale
-img.save("cat.jpg") # note: the grayscale cat image is just named "cat.jpg" now
+img.save(f"{img_name}.jpg")
