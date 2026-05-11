@@ -5,8 +5,7 @@ def laplacian(arr: np.ndarray): # commonly used for image sharpening
     radius = 1 # to simplify things, each region has only 9 pixels.
     """Some filters:
     - Simple Laplacian: -4, 1, 0
-    - Laplacian variant: -8, 1, 1
-    - Blur: 1, 1, 1"""
+    - Laplacian variant: -8, 1, 1"""
     w_center = -4
     w_side = 1
     w_corner = 0
