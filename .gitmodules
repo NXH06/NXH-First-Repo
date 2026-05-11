@@ -1,7 +1,7 @@
 [submodule "B2/APP/pp2025"]
-	path = B2/APP/pp2025
+    path = B2/APP/pp2025
 	url = https://github.com/NXH06/pp2025
 [submodule "B2/MLDM/ml-course"]
-        path = B2/MLDM/ml-course
-        url = https://github.com/USTH-classroom/ml-course
+    path = B2/MLDM/ml-course
+    url = https://github.com/USTH-classroom/ml-course
 
