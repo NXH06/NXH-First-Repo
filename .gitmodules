@@ -1,7 +1,15 @@
-[submodule "B2/APP/pp2025"]
+[submodule "pp2025"]
     path = B2/APP/pp2025
     url = https://github.com/NXH06/pp2025
-[submodule "B2/MLDM/ml-course"]
+
+[submodule "ml-course"]
     path = B2/MLDM/ml-course
     url = https://github.com/USTH-classroom/ml-course
 
+[submodule "ip2026"]
+	path = B2/DIP/ip2026
+	url = https://github.com/NXH06/ip2026
+
+[submodule "stqa-manual-testing-stqa_group_29"]
+    path = B2/STQA/stqa-manual-testing-stqa_group_29
+    url = https://github.com/USTH-STQA-2026/stqa-manual-testing-stqa_group_29
