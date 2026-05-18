@@ -4,7 +4,7 @@
 
 [submodule "ml-course"]
     path = B2/MLDM/ml-course
-    url = https://github.com/USTH-classroom/ml-course
+    url = https://github.com/NXH06/ml-course
 
 [submodule "ip2026"]
 	path = B2/DIP/ip2026
