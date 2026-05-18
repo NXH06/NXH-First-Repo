@@ -7,7 +7,7 @@ Created to store my code in university practice classes.
 
 - [pp2025](https://github.com/NXH06/pp2025)
   - *directory:* ./B2/APP/pp2025
-- [ml-course](https://github.com/usth-classroom/ml-course/)
+- [ml-course](https://github.com/NXH06/ml-course/)
   - *directory:* ./B2/MLDM/ml-course
 - [ip2026](https://github.com/NXH06/ip2026)
   - *directory:* ./B2/DIP/ip2026
