@@ -13,3 +13,7 @@
 [submodule "stqa-manual-testing-stqa_group_29"]
     path = B2/STQA/stqa-manual-testing-stqa_group_29
     url = https://github.com/USTH-STQA-2026/stqa-manual-testing-stqa_group_29
+
+[submodule "stqa-automation-testing-stqa_group_29"]
+    path = B2/STQA/stqa-automation-testing-stqa_group_29
+    url = https://github.com/USTH-STQA-2026/stqa-automation-testing-stqa_group_29
