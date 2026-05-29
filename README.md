@@ -15,3 +15,5 @@ Created to store my code in university practice classes.
   - *directory:* ./B2/STQA/stqa-manual-testing-stqa_group_29
 - [stqa-automation-testing_group_29](https://github.com/USTH-STQA-2026/stqa-automation-testing-stqa_group_29)
   - *directory:* ./B2/STQA/stqa-automation-testing-stqa_group_29
+- [Pokemon-strength-classifier](https://github.com/kinoss123/Pokemon-strength-classifier)
+  - *directory:* .B2/STQA/stqa-manual-testing-stqa_group_29
