@@ -19,8 +19,7 @@ def sobel(arr: np.ndarray): # commonly used for edge detection
             kernel_y = np.transpose(kernel_x)
             output_x[row][col] = np.sum(region * kernel_x)
             output_y[row][col] = np.sum(region * kernel_y)
-    output = np.sqrt(output_x ** 2 + output_y ** 2) # note: built-in power "**" does accept arrays!
-    output = np.clip(np.add(output_x, output_y), 0, 255) # note: np.sum outputs scalar, np.add outputs matrix
+    output = np.clip(output_x + output_y, 0, 255)
     output = output.astype(np.uint8) # Image.fromarray takes uint8 array as input
     return Image.fromarray(output)
 
