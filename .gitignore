@@ -8,3 +8,4 @@ __pycache__
 *.png
 *.ico
 desktop.ini
+personal_projects/**
