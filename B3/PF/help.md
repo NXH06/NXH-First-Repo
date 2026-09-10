@@ -1,0 +1,3 @@
+- When installing GHC versions, disable antivirus
+- Import file into command line: ghci [file]
+- Declaring function: Parameters types -> Return type
