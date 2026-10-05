@@ -18,6 +18,20 @@
 	path = B2/STQA/stqa-automation-testing-stqa_group_29
 	url = https://github.com/USTH-STQA-2026/stqa-automation-testing-stqa_group_29
 
+[submodule "COO-Projet"]
+	path = B3/COO/coo_hien_minh
+	url = https://gitlab-etu.fil.univ-lille.fr/tuan-minh.nguyen.etu/coo_hien_minh
+
 [submodule "PDS-TP1"]
 	path = B3/PDS/tp-tar
 	url = https://gitlab-etu.fil.univ-lille.fr/pds/tp-tar
+
+[submodule "PDS-TP2"]
+	path = B3/PDS/tp2-mdu
+	url = https://gitlab-etu.fil.univ-lille.fr/pds/tp2-mdu
+[submodule "B3/COO/TP1"]
+	path = B3/COO/TP1
+	url = https://gitlab-etu.fil.univ-lille.fr/xuan-hien.nguyen.etu/coo-tp1
+[submodule "B3/COO/coo_hien_minh"]
+	path = B3/COO/coo_hien_minh
+	url = https://gitlab-etu.fil.univ-lille.fr/tuan-minh.nguyen.etu/coo_hien_minh

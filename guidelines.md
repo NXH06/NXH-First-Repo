@@ -1,0 +1,4 @@
+- Install **manpages-dev** for uncommon commands
+- Tab size is 4 spaces
+- When init-ing pointer in C, put asterisk before variable name instead of after filetype
+- Single quotes ('') are for characters, such as '\0', while double quotes ("") are for strings
