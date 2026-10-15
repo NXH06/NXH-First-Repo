@@ -1,3 +1,4 @@
+Man page numbers:
 1. General commands
 2. System calls
 3. Library functions, covering in particular the C standard library

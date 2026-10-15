@@ -1,5 +1,6 @@
 import Data.List (sortOn)
 
+l :: [(String, [Float])]
 l = [
     ("a", [10,0]),
     ("b", [20,10]),

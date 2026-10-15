@@ -1,4 +1,5 @@
 - Install **manpages-dev** for uncommon commands
 - Tab size is 4 spaces
-- When init-ing pointer in C, put asterisk before variable name instead of after filetype
+- When init-ing pointers in C, put the asterisk before variable name instead of after filetype, because that's how Linux man pages do it
 - Single quotes ('') are for characters, such as '\0', while double quotes ("") are for strings
+    - This applies for C and Haskell

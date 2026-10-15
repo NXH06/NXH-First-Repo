@@ -10,7 +10,7 @@ public class ReceiveUDP {
         }
 
         DatagramSocket s = new DatagramSocket(Integer.parseInt(args[0]));
-        DatagramPacket p = new DatagramPacket(new byte[512], 512);
+        DatagramPacket p = new DatagramPacket(new byte[1024], 1024); // tampon de longueur constante
         s.receive(p);
 
         System.out.println("Adresse: " + p.getAddress() + "\nPort: " + p.getPort() + "\nTaille du message: " + p.getLength());

@@ -10,15 +10,12 @@ public class Block {
     public void isBroken() {
         
     }
-    public void applyEffect() {
-        
-    }
-}
-
-public class JackpotBlock extends Block {
-    int RANDOM;
+    public abstract void applyEffect();
     @Override
     public void applyEffect() {
 
+    }
+    public GraphicalBlock getGraphicalBlock() {
+        
     }
 }

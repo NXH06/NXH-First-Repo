@@ -6,7 +6,7 @@ import java.net.MulticastSocket;
 public class MulticastSendUDP {
     public static void main(String[] args) throws IOException {
         if (args.length < 3) {
-            System.out.println("Usage: java SendUDP <adresse_groupe> <port> <message>");
+            System.out.println("Usage: java MulticastSendUDP <adresse_groupe> <port> <message>");
             System.exit(1);
         }
 

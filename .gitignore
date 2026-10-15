@@ -8,5 +8,6 @@ __pycache__
 *.png
 *.ico
 *.jar
+*.class
 desktop.ini
 personal_projects/**
