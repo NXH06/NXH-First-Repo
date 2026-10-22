@@ -1,23 +1,27 @@
-[submodule "pp2025"]
+[submodule "Advanced Programming with Python 2025-2026"]
 	path = B2/APP/pp2025
 	url = https://github.com/NXH06/pp2025
-
-[submodule "ml-course"]
+[submodule "Machine Learning"]
 	path = B2/MLDM/ml-course
 	url = https://github.com/NXH06/ml-course
-
-[submodule "ip2026"]
+[submodule "Digital Image Processing 2025-2026"]
 	path = B2/DIP/ip2026
 	url = https://github.com/NXH06/ip2026
-
-[submodule "stqa-manual-testing-stqa_group_29"]
-	path = B2/STQA/stqa-manual-testing-stqa_group_29
+[submodule "Software Testing & Quality Assurance-Manual Testing"]
+	path = B2/STQA/manual-testing
 	url = https://github.com/USTH-STQA-2026/stqa-manual-testing-stqa_group_29
-
-[submodule "stqa-automation-testing-stqa_group_29"]
-	path = B2/STQA/stqa-automation-testing-stqa_group_29
+[submodule "Software Testing & Quality Assurance-Automation Testing"]
+	path = B2/STQA/automation-testing
 	url = https://github.com/USTH-STQA-2026/stqa-automation-testing-stqa_group_29
-
-[submodule "PDS-TP1"]
-	path = B3/PDS/tp-tar
+[submodule "Programmation des systèmes-TP1"]
+	path = B3/PDS/TP1
 	url = https://gitlab-etu.fil.univ-lille.fr/pds/tp-tar
+[submodule "Programmation des systèmes-TP2"]
+	path = B3/PDS/TP2
+	url = https://gitlab-etu.fil.univ-lille.fr/pds/tp2-mdu
+[submodule "Conception orientée objet-TP1"]
+	path = B3/COO/TP1
+	url = https://gitlab-etu.fil.univ-lille.fr/xuan-hien.nguyen.etu/coo-tp1
+[submodule "Conception orientée objet-Projet"]
+	path = B3/COO/Projet
+	url = https://gitlab-etu.fil.univ-lille.fr/tuan-minh.nguyen.etu/coo_hien_minh

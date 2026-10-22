@@ -59,3 +59,28 @@ longueurMoyenne d = longueurMoyenneAuxTerm d 0 0
         -- fromIntegral convertit Int -> Float, parce que la division n'accepte que des Floats
         longueurMoyenneAuxTerm [] n s = if n /= 0 then fromIntegral s / fromIntegral n else 0
         longueurMoyenneAuxTerm ((_,_,contenu):ltail) n s = longueurMoyenneAuxTerm ltail (n + 1) (s + length contenu)
+
+----
+-- Début de TP4
+----
+
+compterArticles4 :: [(Int, String, String)] -> Int
+compterArticles4 = length
+
+existeArticle4 :: Int -> [(Int, String, String)] -> Bool
+existeArticle4 i' = any (\ (i,t,c) -> i == i')
+
+prendre4 :: Int -> [(Int, String, String)] -> [(Int, String, String)]
+prendre4 = take
+
+longueurMoyenne4 :: [(Int, String, String)] -> Float
+longueurMoyenne4 d = fromIntegral (sum (map (\ (i,t,c) -> length c) d)) / fromIntegral (length d)
+{-- Si l'usage de fromIntegral n'est pas autorisée: convertir tous les caractères de la chaîne en 1, puis utiliser sum --}
+
+presenterArticles4 :: [(Int, String, String)] -> String
+presenterArticles4 =
+    concatMap (\ (i,t,c) -> "--\n" ++ show i ++ " - " ++ show t ++ "\n--\n" ++ show (take sample c) ++ "\n--\n")
+    where 
+        -- prendre seulement les *sample* premiers caractères de chaque article pour une propre affichage
+        sample :: Int
+        sample = 108

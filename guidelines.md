@@ -1,0 +1,7 @@
+- Install **manpages-dev** for uncommon commands
+- Tab size is 4 spaces
+- When init-ing pointers in C, put the asterisk before variable name instead of after filetype, because that's how Linux man pages do it
+- Single quotes ('') are for characters, such as '\0', while double quotes ("") are for strings
+  - This applies for C and Haskell
+- Compile Java classes: javac -classpath [jar file]:classes [file1] [file2]
+- Run JUnit tests: java -jar [jar file] -classpath [classes directory] --scan-classpath
