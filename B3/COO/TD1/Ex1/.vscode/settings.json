@@ -1,7 +1,0 @@
-{
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "C:/Users/NXH/Desktop/CODE/B3/COO/TD1/Ex1/lib/junit-platform-console-standalone-1.10.2.jar"
-    ]
-}

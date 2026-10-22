@@ -2,13 +2,13 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-#define TAILLE 16
+#define TAILLE 10
 
 int main(int argc, char *argv[]) {
-    int tableau[TAILLE] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+    int tableau[TAILLE] = {0,1,2,3,4,5,6,7,8,9};
     int n = TAILLE;
 
-    int f = open("writefile.txt", O_WRONLY | O_CREAT, 0x777);
+    int f = open("binfile.bin", O_WRONLY | O_CREAT, 0x777); // 0x777: Permission de lire, écrire & éxécuter pour tous
     for (int i = 0; i < n; i++) {
         write(f, tableau + i, sizeof(int)); // tableau + i -> &(tableau[i])
     }

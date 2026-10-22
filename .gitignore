@@ -2,10 +2,16 @@ __pycache__
 *.dat
 *.zip
 *.txt
+*.bin
 *.doc
 *.docx
 *.jpg
 *.png
 *.ico
+*.jar
+*.class
 desktop.ini
+
+**/PDS/Sample\ Exam*
+**/COO/CM5
 personal_projects/**

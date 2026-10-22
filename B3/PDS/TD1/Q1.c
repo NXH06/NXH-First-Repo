@@ -1,11 +1,9 @@
 #include <stdio.h>
+#include <assert.h>
 
 int main(int argc, char *argv[]) {
+    assert(argc == 2);
     FILE *f = fopen(argv[1], "r");
-    if (!f) {
-        printf("Le fichier n'existe pas.");
-        return 1;
-    }
     int c;
     while ((c = fgetc(f)) != EOF) {
         putchar(c);
