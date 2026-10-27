@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public abstract class ServiceTest {
     protected Service service;
     protected abstract Service createService();
+    // Factory method
     @BeforeEach
     public void init() {
         this.service = this.createService();
@@ -11,14 +12,14 @@ public abstract class ServiceTest {
 
     @Test
     public void testIsUsedByWhenOk() throws Exception {
-        ServiceUser user = new ServiceUser(5 * service.getCost());
+        ServiceUser user = new ServiceUser(10 * service.getCost());
 
         // état avant appel de useService()
         int moneyBefore = user.getMoney();
         int nbUseBefore = service.getNbUse();
 
         // l'appel
-        user.useService(service);
+        service.isUsedBy(user);
         assertEquals(1, service.getNbUse() - nbUseBefore);
         assertEquals(service.getCost(), moneyBefore - user.getMoney());
     }
@@ -26,7 +27,7 @@ public abstract class ServiceTest {
     @Test
     public void testIsUsedByWhenNotEnoughMoney() {
         ServiceUser user = new ServiceUser(service.getCost() - 1);
-        assertThrows(NotEnoughMoneyException.class, () -> user.useService(service));
+        assertThrows(NotEnoughMoneyException.class, () -> service.isUsedBy(user));
         assertEquals(service.getCost() - 1, user.getMoney());
     }
 }
