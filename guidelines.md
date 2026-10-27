@@ -5,3 +5,4 @@
   - This applies for C and Haskell
 - Compile Java classes: javac -classpath [jar file]:classes [file1] [file2]
 - Run JUnit tests: java -jar [jar file] -classpath [classes directory] --scan-classpath
+- Avoid overusing "this" while writing Java - reserve it for constructors, getters, setters and for ambiguous cases only
